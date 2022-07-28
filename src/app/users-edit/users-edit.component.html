@@ -1,0 +1,20 @@
+
+<div class="container custom-container-2">
+  <h3 class="mb-3 text-center">User Details</h3>
+  <table class="table table-bordered">
+    <caption>List of users</caption>
+    <thead>
+      <tr>
+        <th scope="col">User Details</th>
+        <th scope="col">User Entry in List => {{userData.id}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><b>First Name</b></td><td><input type="text" [(ngModel)]="userData.first_name"></td></tr>
+      <tr><td><b>Last Name</b></td><td><input type="text" [(ngModel)]="userData.last_name"></td></tr>
+      <tr><td><b>Email</b></td><td><input type="text" [(ngModel)]="userData.email"></td></tr>
+      <tr><td colspan="2"><button type="submit" (click)="update()">Update</button></td></tr>
+        <tr scope="col" colspan="2"><span class="list" routerLink="/users-list"><button>Go Back to Users List</button></span></tr>
+    </tbody>
+  </table>
+ </div>

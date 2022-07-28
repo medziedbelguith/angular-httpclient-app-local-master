@@ -1,0 +1,14 @@
+<br/><br/><br/><br/>
+<h3 style="text-align:center">Create (Register) a New user</h3>
+<div style="margin-left:580px">
+<form #createUserForm="ngForm" (ngSubmit)="createUser(createUserForm)">
+  <label for="firstname" style="margin-left:50px">FirstName</label><br/>
+ <input type="text"  name="first_name" id="first_name"  ngModel><br/><br/>
+ <label for="lastname"  style="margin-left:50px">LastName</label><br/>
+ <input type="text" name="last_name" id="last_name" ngModel><br/><br/>
+ <label for="email"  style="margin-left:70px">Email</label><br/>
+ <input type="text" name="email"  id="email"  ngModel><br/><br/>
+ <button type="submit" style="margin-left:40px">Create User</button><br/>
+</form>
+</div>
+<a class="btn btn-outline-primary" routerLink="/">Redirect to Home Page of the Application</a>
